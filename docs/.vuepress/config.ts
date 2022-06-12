@@ -9,8 +9,8 @@ import baiduCode from "./config/baiduCode"; // 百度统计hm码
 import htmlModules from "./config/htmlModules"; // 自定义插入的html块
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  theme: "vdoing", // 使用npm包主题
-  // theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
+  // theme: "vdoing", // 使用npm包主题
+  theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
 
   locales: {
     "/": {
@@ -40,7 +40,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: "《JavaScript教程》", link: "/note/javascript/" },
               { text: "《JavaScript高级程序设计》", link: "/note/js/" },
-              { text: "《ES6教程》", link: "/note/es6/" },
+              // { text: "《ES6教程》", link: "/note/es6/" },
               { text: "《Vue》", link: "/note/vue/" },
               { text: "《React》", link: "/note/react/" },
               // {

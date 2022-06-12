@@ -27,4 +27,4 @@ git push -f git@github.com:zhushengjie123/zhushengjie123.github.io.git master:gh
 # 这句需要配置自己的仓库地址,除过这句代码,其他均复制粘贴即可
  
 cd -
-rm -rf docs/.vuepress/dist
+# rm -rf docs/.vuepress/dist

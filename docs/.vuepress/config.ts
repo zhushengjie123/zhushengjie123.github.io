@@ -33,20 +33,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
             text: "前端文章",
-            items: [{ text: "JavaScript", link: "/pages/8143cc480faf9a11/" }],
+            items: [{ text: "JavaScript", link: "/pages/a61298/" }],
           },
           {
             text: "学习笔记",
             items: [
               { text: "《JavaScript教程》", link: "/note/javascript/" },
-              { text: "《JavaScript高级程序设计》", link: "/note/js/" },
-              // { text: "《ES6教程》", link: "/note/es6/" },
+              { text: "《JavaScript高级程序设计》", link: "/pages/19cf5a/" },
+              { text: "《ES6教程》", link: "/note/es6/" },
               { text: "《Vue》", link: "/note/vue/" },
               { text: "《React》", link: "/note/react/" },
-              // {
-              //   text: '《TypeScript 从零实现 axios》',
-              //   link: '/note/typescript-axios/',
-              // },
+              {
+                text: '《TypeScript》',
+                link: '/note/typescript/',
+              },
               {
                 text: "《Git》",
                 link: "/note/git/",
@@ -54,6 +54,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               {
                 text: "TypeScript",
                 link: "/pages/51afd6/",
+              },
+              {
+                text: "小程序笔记",
+                link: "/note/wx-miniprogram/",
               },
               {
                 text: "JS设计模式总结",
@@ -67,8 +71,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: "页面",
         link: "/ui/",
         items: [
-          { text: "HTML", link: "/pages/8309a5b876fc95e3/" },
-          { text: "CSS", link: "/pages/0a83b083bdf257cb/" },
+          { text: "HTML", link: "/pages/7f9d15/" },
+          { text: "CSS", link: "/pages/762145/" },
         ],
       },
       {
@@ -79,6 +83,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: "GitHub技巧", link: "/pages/4c778760be26d8b3/" },
           { text: "Nodejs", link: "/pages/117708e0af7f0bd9/" },
           { text: "博客搭建", link: "/pages/41f87d890d0a02af/" },
+          { text: "Ajax", link: "/pages/e5ac77/" },
+          { text: "Vite", link: "/pages/13aa70/" },
         ],
       },
       {
@@ -186,7 +192,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         // },
       ],
     },
-
+    extendFrontmatter: {
+      author: {
+        name: '夜猫子',
+        link: 'https://github.com/zhushengjie123'
+      },
+      titleTag: '',
+    },
     // 页脚信息
     footer: {
       createYear: 2019, // 博客创建年份
@@ -254,7 +266,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         settings: {
           // jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
           // cssLib: ['http://xxx'], // 在线示例中的css依赖
-          // vue: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
+          vue: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
           jsfiddle: false, // 是否显示 jsfiddle 链接
           codepen: true, // 是否显示 codepen 链接
           horizontal: false, // 是否展示为横向样式

@@ -52,10 +52,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 link: "/note/git/",
               },
               {
-                text: "TypeScript",
-                link: "/pages/51afd6/",
-              },
-              {
                 text: "小程序笔记",
                 link: "/note/wx-miniprogram/",
               },
